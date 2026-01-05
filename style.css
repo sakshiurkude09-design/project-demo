@@ -209,7 +209,7 @@ nav i{
         cursor: pointer;
     }
 .nav-links i{
-   color: #000;
+   color: #fff;
 }
     .nav-links{
         position: fixed;
@@ -1367,6 +1367,7 @@ h6 {
 .fade-right {
     transform: translateX(40px); /* from right */
 }
+
 
 
 
