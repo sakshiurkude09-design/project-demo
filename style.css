@@ -1159,7 +1159,7 @@ h6 {
         rgba(0,0,0,0.55),
         rgba(0,0,0,0.55)
     ),
-    url("image files/solarimage.jpg"); /* optional background image */
+    url("solarimage.jpg"); /* optional background image */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1358,5 +1358,6 @@ h6 {
 .fade-right {
     transform: translateX(40px); /* from right */
 }
+
 
 
