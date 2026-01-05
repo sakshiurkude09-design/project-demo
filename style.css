@@ -798,7 +798,7 @@ h6 {
     }
     .header-slideshow img,
     .header-slideshow1 img{
-        height: 40vh;
+        height: 30vh;
         background-color: rgb(255, 255, 255);
         overflow-clip-margin: content-box;
         overflow: clip;
@@ -1154,12 +1154,12 @@ h6 {
 /* ================= ABOUT HEADER ================= */
 .panel-header {
     margin-top: 70px; /* navbar height */
-    height: 35vh;
+    height: 45vh;
     background: linear-gradient(
         rgba(0,0,0,0.55),
         rgba(0,0,0,0.55)
     ),
-    url("solarimage.jpg"); /* optional background image */
+    url("image files/solarimage.jpg"); /* optional background image */
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1270,7 +1270,7 @@ h6 {
 @media (max-width: 768px) {
 
     .panel-header {
-        height: 35vh;
+        height: 25vh;
     }
 
     .text-box1 h2 {
@@ -1358,7 +1358,5 @@ h6 {
 .fade-right {
     transform: translateX(40px); /* from right */
 }
-
-
 
 
