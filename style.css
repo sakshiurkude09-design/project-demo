@@ -1154,7 +1154,7 @@ h6 {
 /* ================= ABOUT HEADER ================= */
 .panel-header {
     margin-top: 70px; /* navbar height */
-    height: 45vh;
+    height: 35vh;
     background: linear-gradient(
         rgba(0,0,0,0.55),
         rgba(0,0,0,0.55)
@@ -1358,6 +1358,7 @@ h6 {
 .fade-right {
     transform: translateX(40px); /* from right */
 }
+
 
 
 
