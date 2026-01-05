@@ -42,8 +42,14 @@ nav {
 nav h1{
     color: white;
 }
-.nav-links ul li a.active{
+.nav-links ul li a:hover {
     color: #f7b500;
+}
+
+/* Current page effect */
+.nav-links ul li a.active {
+    color: #f7b500;
+    border-bottom: 2px solid #f7b500;
 }
 
 
@@ -158,6 +164,7 @@ nav i{
     right: 20px;
 }
 
+
 /* ================= SCROLL ANIMATION ================= */
 .animate {
     opacity: 0;
@@ -204,13 +211,12 @@ nav i{
 
     nav i{
         display: block;
-        color: white;
+        color: #fff;
         font-size: 22px;
         cursor: pointer;
-        padding-right: 20px;
     }
 .nav-links i{
-   color: #fff;
+   color: #000;
 }
     .nav-links{
         position: fixed;
@@ -275,7 +281,7 @@ nav i{
 .next {
     right: 20px;
 }
-    .prev1 {
+.prev1 {
     left: 20px;
    top: 47%;
 }
@@ -1368,11 +1374,5 @@ h6 {
 .fade-right {
     transform: translateX(40px); /* from right */
 }
-
-
-
-
-
-
 
 
