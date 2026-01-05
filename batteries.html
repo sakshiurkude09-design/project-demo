@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta charset="UTF-8">
+    <title>SHUL VENTURES WEBSITE</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<section class="batteries-header">
+    
+    <nav>
+        <h1>Shul Ventures</h1>
+        <div class="nav-links" id="navLinks">  
+            <i class="ri-close-line" onclick="hideMenu()"></i>
+            <ul>
+                 <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>    
+                
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="ri-menu-line" onclick="showMenu()"></i>
+    </nav>
+
+    
+<section class="panel-header">
+   
+
+    <!-- Slideshow images -->
+    <div class="header-slideshow">
+        <img src="image files/reliance-battary.jpg" class="slide active" alt="Solar 1">
+        <img src="image files/waaree-battaries.jpg" class="slide" alt="Solar 2">
+        <img src="image files/tata-battries.jpg" class="slide" alt="Solar 3">
+        <img src="image files/vikram-battary.jpg" class="slide" alt="Solar 4">
+    </div>
+
+  
+</section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+     navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+</script>
+<section class="solarpanel">
+    <div class="solar">
+        <h1>Solar Batteries</h1>
+
+    </div>
+</section>
+<section class="solarpanel">
+    <h2>Uses of Solar Batteries</h2>
+    <ul class="solar-points">
+        <li><strong>Residential Backup:</strong> Stores energy for home use during power cuts.</li>
+        <li><strong>Commercial Use:</strong> Supplies backup power to offices, shops, and malls.</li>
+        <li><strong>Off-Grid Systems:</strong> Provides electricity in remote or rural areas.</li>
+        <li><strong>Solar Integration:</strong> Works with solar panels for energy storage.</li>
+        <li><strong>Electric Vehicles:</strong> Powers electric vehicles and small transport.</li>
+        <li><strong>Grid Support:</strong> Helps in peak load management for the grid.</li>
+    </ul>
+
+    <h2>Advantages of Solar Batteries</h2>
+    <ul class="solar-points">
+        <li><strong>Energy Storage:</strong> Store excess solar energy for later use.</li>
+        <li><strong>Cost Saving:</strong> Reduce reliance on grid electricity and lower bills.</li>
+        <li><strong>Reliable Backup:</strong> Provides power during outages.</li>
+        <li><strong>Eco-Friendly:</strong> Supports clean energy usage.</li>
+        <li><strong>Long Lifespan:</strong> Lasts for several years with proper maintenance.</li>
+        <li><strong>Easy Installation:</strong> Simple setup with solar systems.</li>
+    </ul>
+
+    <h2>Qualities / Features to Look For</h2>
+    <ul class="solar-points">
+        <li><strong>Battery Type:</strong> Lithium-ion, Lead-acid, or Gel batteries.</li>
+        <li><strong>Capacity:</strong> Measured in Ah (Ampere-hour) or kWh.</li>
+        <li><strong>Voltage:</strong> Ensure compatibility with your solar system.</li>
+        <li><strong>Durability:</strong> Resistant to temperature changes and weather conditions.</li>
+        <li><strong>Warranty:</strong> Typically 3–10 years.</li>
+        <li><strong>Safety:</strong> Overcharge, short-circuit, and fire protection.</li>
+    </ul>
+</section>
+<section class="solar-companies">
+    <h2>Top Solar Battaries Brands We Deal With</h2>
+
+    <div class="company-cards">
+
+        <div class="company-card" onclick="openBatteryModal('reliance')">
+    <img src="image files/reliance-battary.jpg">
+    <h3>Reliance Solar Batteries</h3>
+    <p>High efficiency Indian batteries</p>
+</div>
+
+<div class="company-card" onclick="openBatteryModal('waaree')">
+    <img src="image files/waaree-battaries.jpg">
+    <h3>Waaree Solar Batteries</h3>
+    <p>Reliable & cost-effective batteries</p>
+</div>
+
+<div class="company-card" onclick="openBatteryModal('tata')">
+    <img src="tata-battries.jpg">
+    <h3>Tata Solar Batteries</h3>
+    <p>Premium quality & long life</p>
+</div>
+
+<div class="company-card" onclick="openBatteryModal('vikram')">
+    <img src="image files/vikram-battary.jpg">
+    <h3>Vikram Solar Batteries</h3>
+    <p>Global standard battery technology</p>
+</div>
+
+    </div>
+</section>
+<div id="batteryModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeBatteryModal()">×</span>
+        <h2 id="batteryTitle"></h2>
+        <ul id="batteryPoints"></ul>
+    </div>
+</div>
+
+<footer>
+    <section class="footer">
+        <div class="footer-row">
+
+            <!-- Left: Credentials -->
+            <div class="footer-left">
+                <p class="title">Our Credentials</p>
+
+                <ul class="credentials">
+                    <li><strong>CIN:</strong> U74999MH2018PTC308404</li>
+                    <li><strong>PAN:</strong> ABACS2141Q</li>
+                    <li><strong>TAN:</strong> NGPS17088B</li>
+                    <li><strong>GST:</strong> 27ABACS2141Q1Z3</li>
+                </ul>
+            </div>
+
+            <!-- Center: Follow Us -->
+            <div class="footer-center">
+                <h6>Follow Us</h6>
+                <p class="social">Let us be social</p>
+
+                <div class="social-icons">
+                    <i class="ri-facebook-line"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
+                     <button class="arrow prev" onclick="prevSlide()">❮</button>
+                     <button class="arrow next" onclick="nextSlide()">❯</button>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2025 All Rights Reserved<br>
+            Designed by – Team SHUL
+        </p>
+    </section>
+</footer>
+<script>
+    const slides = document.querySelectorAll('.header-slideshow .slide');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    // auto slide
+    setInterval(nextSlide, 3000);
+</script>
+<script>
+const batteryData = {
+    reliance: {
+        title: "Reliance Solar Batteries",
+        points: [
+            "High energy storage capacity",
+            "Long backup time",
+            "Made in India – trusted brand",
+            "Low maintenance design",
+            "Compatible with solar inverters",
+            "Strong build quality",
+            "Overcharge & discharge protection",
+            "Long service life",
+            "Suitable for home & commercial use"
+        ]
+    },
+    waaree: {
+        title: "Waaree Solar Batteries",
+        points: [
+            "Cost-effective battery solution",
+            "Good charging efficiency",
+            "Reliable backup performance",
+            "Durable outer casing",
+            "Easy installation",
+            "Supports solar & inverter systems",
+            "Low self-discharge rate",
+            "Consistent power output",
+            "Good warranty support"
+        ]
+    },
+    tata: {
+        title: "Tata Solar Batteries",
+        points: [
+            "Premium quality batteries",
+            "High cycle life",
+            "Advanced safety features",
+            "Fast charging capability",
+            "Stable power supply",
+            "Weather resistant design",
+            "Long warranty period",
+            "Low maintenance requirement",
+            "Ideal for rooftop solar systems"
+        ]
+    },
+    vikram: {
+        title: "Vikram Solar Batteries",
+        points: [
+            "Global standard battery technology",
+            "High efficiency energy storage",
+            "Excellent temperature tolerance",
+            "Strong & durable design",
+            "Advanced protection system",
+            "Long operational life",
+            "Reliable backup during outages",
+            "Compatible with hybrid systems",
+            "Used in large solar projects"
+        ]
+    }
+};
+
+function openBatteryModal(company) {
+    document.getElementById("batteryTitle").innerText = batteryData[company].title;
+
+    const list = document.getElementById("batteryPoints");
+    list.innerHTML = "";
+
+    batteryData[company].points.forEach(point => {
+        const li = document.createElement("li");
+        li.innerText = point;
+        list.appendChild(li);
+    });
+
+    document.getElementById("batteryModal").style.display = "block";
+}
+
+function closeBatteryModal() {
+    document.getElementById("batteryModal").style.display = "none";
+}
+</script>
+
+
+
+</body>
+</html>

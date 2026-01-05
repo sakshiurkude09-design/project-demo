@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta charset="UTF-8">
+    <title>SHUL VENTURES WEBSITE</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+<section class="inverter-header">
+    
+    <nav>
+        <h1>Shul Ventures</h1>
+        <div class="nav-links" id="navLinks">  
+            <i class="ri-close-line" onclick="hideMenu()"></i>
+            <ul>
+                 <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>    
+               
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="ri-menu-line" onclick="showMenu()"></i>
+    </nav>
+
+    
+<section class="panel-header">
+   
+
+    <!-- Slideshow images -->
+    <div class="header-slideshow">
+        <img src="image files/reliance-invertor.jpg" class="slide active" alt="Solar 1">
+        <img src="image files/waaree-invertor.jpg" class="slide" alt="Solar 2">
+        <img src="image files/tata-invertor.jpg" class="slide" alt="Solar 3">
+        <img src="image files/vikram-invertor.jpg" class="slide" alt="Solar 4">
+
+         <button class="arrow prev" onclick="prevSlide()">❮</button>
+                     <button class="arrow next" onclick="nextSlide()">❯</button>
+    </div>
+
+  
+</section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+     navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+</script>
+<section class="solarpanel">
+    <div class="solar">
+        <h1>Solar Inverters</h1>
+
+    </div>
+</section>
+<section class="solarpanel">
+    <h2>Uses of Solar Inverters</h2>
+    <ul class="solar-points">
+        <li><strong>Power Conversion:</strong> Converts DC power from solar panels into usable AC power.</li>
+        <li><strong>Residential Use:</strong> Supplies electricity to homes efficiently.</li>
+        <li><strong>Commercial Buildings:</strong> Used in offices, malls, and factories.</li>
+        <li><strong>Grid Connection:</strong> Sends excess power back to the grid.</li>
+        <li><strong>Off-Grid Systems:</strong> Provides power in remote areas.</li>
+        <li><strong>Backup Power:</strong> Works with batteries during power cuts.</li>
+    </ul>
+
+    <h2>Advantages of Solar Inverters</h2>
+    <ul class="solar-points">
+        <li><strong>High Efficiency:</strong> Maximizes usable solar energy.</li>
+        <li><strong>Stable Power Supply:</strong> Smooth and reliable electricity.</li>
+        <li><strong>Energy Saving:</strong> Reduces electricity bills.</li>
+        <li><strong>Low Maintenance:</strong> Long life with minimal servicing.</li>
+        <li><strong>Smart Monitoring:</strong> Tracks energy production and usage.</li>
+        <li><strong>Eco-Friendly:</strong> Supports clean and green energy.</li>
+    </ul>
+
+    <h2>Qualities / Features to Look For</h2>
+    <ul class="solar-points">
+        <li><strong>Efficiency Rating:</strong> Higher efficiency means better performance.</li>
+        <li><strong>Inverter Type:</strong> String, Micro, or Hybrid inverter.</li>
+        <li><strong>Battery Compatibility:</strong> Supports lithium or lead-acid batteries.</li>
+        <li><strong>Warranty:</strong> Usually 5–10 years.</li>
+        <li><strong>Safety Features:</strong> Overload & short-circuit protection.</li>
+        <li><strong>Monitoring System:</strong> Mobile app or display support.</li>
+    </ul>
+</section>
+<section class="solar-companies">
+    <h2>Top  Solar inverter Brands We Deal With</h2>
+
+    <div class="company-cards">
+
+        <div class="company-card" onclick="openInverterModal('reliance')">
+    <img src="image files/reliance-invertor.jpg">
+    <h3>Reliance Solar Inverter</h3>
+    <p>High efficiency Indian inverter</p>
+</div>
+
+<div class="company-card" onclick="openInverterModal('waaree')">
+    <img src="image files/waaree-invertor.jpg">
+    <h3>Waaree Solar Inverter</h3>
+    <p>Reliable & cost-effective</p>
+</div>
+
+<div class="company-card" onclick="openInverterModal('tata')">
+    <img src="image files/tata-invertor.jpg">
+    <h3>Tata Solar Inverter</h3>
+    <p>Premium quality inverter</p>
+</div>
+
+<div class="company-card" onclick="openInverterModal('vikram')">
+    <img src="image files/vikram-invertor.jpg">
+    <h3>Vikram Solar Inverter</h3>
+    <p>Global standard technology</p>
+</div>
+    </div>
+</section>
+
+<footer>
+    <section class="footer">
+        <div class="footer-row">
+
+            <!-- Left: Credentials -->
+            <div class="footer-left">
+                <p class="title">Our Credentials</p>
+
+                <ul class="credentials">
+                    <li><strong>CIN:</strong> U74999MH2018PTC308404</li>
+                    <li><strong>PAN:</strong> ABACS2141Q</li>
+                    <li><strong>TAN:</strong> NGPS17088B</li>
+                    <li><strong>GST:</strong> 27ABACS2141Q1Z3</li>
+                </ul>
+            </div>
+
+            <!-- Center: Follow Us -->
+            <div class="footer-center">
+                <h6>Follow Us</h6>
+                <p class="social">Let us be social</p>
+
+                <div class="social-icons">
+                    <i class="ri-facebook-line"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2025 All Rights Reserved<br>
+            Designed by – Team SHUL
+        </p>
+    </section>
+</footer>
+<script>
+    const slides = document.querySelectorAll('.header-slideshow .slide');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    // auto slide
+    setInterval(nextSlide, 3000);
+</script>
+<div id="inverterModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeInverterModal()">×</span>
+        <h2 id="inverterTitle"></h2>
+        <ul id="inverterPoints"></ul>
+    </div>
+</div>
+<script>
+const inverterData = {
+    reliance: {
+        title: "Reliance Solar Inverter",
+        points: [
+            "High conversion efficiency",
+            "Supports hybrid solar systems",
+            "Smart energy management",
+            "Strong Indian brand trust",
+            "Low power loss",
+            "Works with lithium & lead batteries",
+            "Overload & short circuit protection",
+            "Long operational life",
+            "Suitable for home & business"
+        ]
+    },
+    waaree: {
+        title: "Waaree Solar Inverter",
+        points: [
+            "Cost-effective inverter solution",
+            "High reliability performance",
+            "Grid-tied & off-grid support",
+            "Compact & durable design",
+            "Easy installation",
+            "Smart monitoring support",
+            "Low maintenance",
+            "Efficient power output",
+            "Good warranty support"
+        ]
+    },
+    tata: {
+        title: "Tata Solar Inverter",
+        points: [
+            "Premium build quality",
+            "Advanced safety standards",
+            "High efficiency conversion",
+            "Stable power output",
+            "Smart monitoring app",
+            "Strong after-sales support",
+            "Long warranty period",
+            "Weather resistant body",
+            "Ideal for rooftop systems"
+        ]
+    },
+    vikram: {
+        title: "Vikram Solar Inverter",
+        points: [
+            "Global quality standards",
+            "High temperature tolerance",
+            "Efficient energy management",
+            "Heavy-duty performance",
+            "Advanced protection features",
+            "Smart grid compatibility",
+            "Long service life",
+            "Reliable output stability",
+            "Used in large solar projects"
+        ]
+    }
+};
+
+function openInverterModal(company) {
+    document.getElementById("inverterTitle").innerText = inverterData[company].title;
+
+    const list = document.getElementById("inverterPoints");
+    list.innerHTML = "";
+
+    inverterData[company].points.forEach(point => {
+        const li = document.createElement("li");
+        li.innerText = point;
+        list.appendChild(li);
+    });
+
+    document.getElementById("inverterModal").style.display = "block";
+}
+
+function closeInverterModal() {
+    document.getElementById("inverterModal").style.display = "none";
+}
+</script>
+
+
+
+</body>
+</html>

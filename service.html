@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta charset="UTF-8">
+    <title>SHUL VENTURES WEBSITE</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+ <nav>
+   <h1>Shul Ventures</h1>
+
+    <div class="nav-links" id="navLinks">  
+       <i class="ri-close-line" onclick="hideMenu()"></i>
+       
+        <ul>
+            <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>    
+                
+                <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+     <i class="ri-menu-line" onclick="showMenu()"></i>
+    
+</nav>
+<section class="panel-header">
+   
+
+    <!-- Slideshow images -->
+     <div class="header-slideshow1">
+        <img src="image files/solarpanel.jpg" class="slide active" alt="Solar 1">
+        <img src="image files/waaree-battaries.jpg" class="slide" alt="Solar 2">
+        <img src="image files/tata-solar.jpg" class="slide" alt="Solar 3">
+        <img src="image files/vikram-invertor.jpg" class="slide" alt="Solar 4">
+
+          <button class="arrow prev" onclick="prevSlide()">❮</button>
+    <button class="arrow next" onclick="nextSlide()">❯</button>
+    </div>
+
+  
+</section>
+<section class="header">
+
+
+
+</section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+     navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+</script>
+
+<section class="section2 animate fade-up">
+    <h1>OUR SERVICES</h1>
+</section>
+
+<section class="services">
+    <h2 class="animate fade-up">Our Solar Products</h2>
+
+    <div class="cards">
+        <div class="card animate fade-left">
+            <a href="solar-panels.html">
+                <img src="image files/solar plate.jpg" alt="Solar Panels">
+                <h3>Solar Panels</h3>
+                <p>High efficiency solar plates</p>
+            </a>
+        </div>
+
+        <div class="card animate fade-up">
+            <a href="inverters.html">
+                <img src="image files/solar inverter.jpg" alt="Inverters">
+                <h3>Inverters</h3>
+                <p>Reliable power conversion</p>
+            </a>
+        </div>
+
+        <div class="card animate fade-right">
+            <a href="batteries.html">
+                <img src="image files/solarbattary.jpg" alt="Batteries">
+                <h3>Batteries</h3>
+                <p>Store energy for night use</p>
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <section class="footer">
+        <div class="footer-row">
+
+            <!-- Left: Credentials -->
+            <div class="footer-left">
+                <p class="title">Our Credentials</p>
+
+                <ul class="credentials">
+                    <li><strong>CIN:</strong> U74999MH2018PTC308404</li>
+                    <li><strong>PAN:</strong> ABACS2141Q</li>
+                    <li><strong>TAN:</strong> NGPS17088B</li>
+                    <li><strong>GST:</strong> 27ABACS2141Q1Z3</li>
+                </ul>
+            </div>
+
+            <!-- Center: Follow Us -->
+            <div class="footer-center">
+                <h6>Follow Us</h6>
+                <p class="social">Let us be social</p>
+
+                <div class="social-icons">
+                    <i class="ri-facebook-line"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2025 All Rights Reserved<br>
+            Designed by – Team SHUL
+        </p>
+    </section>
+</footer>
+<script>
+    const slides = document.querySelectorAll('.header-slideshow1 .slide');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    // auto slide
+    setInterval(nextSlide, 3000);
+</script>
+<script>
+const animatedElements = document.querySelectorAll(".animate");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.2 });
+
+animatedElements.forEach(el => observer.observe(el));
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Shul Ventures</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR (same as index page) -->
+<nav>
+    <h1>Shul Ventures</h1>
+    <div class="nav-links" id="navLinks">
+        <i class="ri-close-line" onclick="hideMenu()"></i>
+        <ul>
+             <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="service.html">SERVICE</a></li>
+         
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+    <i class="ri-menu-line" onclick="showMenu()"></i>
+</nav>
+
+<!-- CONTACT SECTION -->
+<section class="contact">
+    <h2 class="animate fade-down" data-delay="0">Contact Us</h2>
+    <p>Get in touch with us for solar solutions</p>
+
+    <div class="contact-container">
+        <div class="contact-form animate fade-up" data-delay="0.2">
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Phone Number">
+            <textarea rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+</div>
+ <div class="contact-info animate fade-up" data-delay="0.4">
+        <!-- Contact Info -->
+        <div class="contact-info">
+            <p><i class="ri-map-pin-line"></i> Nagpur, Maharashtra</p>
+            <p><i class="ri-phone-line"></i> +91 9XXXXXXXXX</p>
+            <p><i class="ri-mail-line"></i> info@shulventures.com</p>
+        </div>
+         </div>
+    </div>
+</section>
+ <footer>
+    <section class="footer">
+        <div class="footer-row">
+
+            <!-- Left: Credentials -->
+            <div class="footer-left">
+                <p class="title">Our Credentials</p>
+
+                <ul class="credentials">
+                    <li><strong>CIN:</strong> U74999MH2018PTC308404</li>
+                    <li><strong>PAN:</strong> ABACS2141Q</li>
+                    <li><strong>TAN:</strong> NGPS17088B</li>
+                    <li><strong>GST:</strong> 27ABACS2141Q1Z3</li>
+                </ul>
+            </div>
+
+            <!-- Center: Follow Us -->
+            <div class="footer-center">
+                <h6>Follow Us</h6>
+                <p class="social">Let us be social</p>
+
+                <div class="social-icons">
+                    <i class="ri-facebook-line"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2025 All Rights Reserved<br>
+            Designed by – Team SHUL
+        </p>
+    </section>
+   
+</footer>
+
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){ navLinks.style.right="0"; }
+    function hideMenu(){ navLinks.style.right="-200px"; }
+</script>
+<script>
+const animatedElements = document.querySelectorAll(".animate");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const delay = entry.target.getAttribute("data-delay") || 0;
+            entry.target.style.animationDelay = delay + "s";
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.2
+});
+
+animatedElements.forEach(el => observer.observe(el));
+</script>
+
+
+</body>
+</html>

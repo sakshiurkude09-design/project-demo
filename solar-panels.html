@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <meta charset="UTF-8">
+    <title>SHUL VENTURES WEBSITE</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+<section class="batteries-header">
+    
+    <nav>
+        <h1>Shul Ventures</h1>
+        <div class="nav-links" id="navLinks">  
+            <i class="ri-close-line" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>    
+                
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="ri-menu-line" onclick="showMenu()"></i>
+    </nav>
+
+    
+<section class="panel-header">
+   
+
+    <!-- Slideshow images -->
+     <div class="header-slideshow">
+        <img src="image files/realience-solar.jpg" class="slide active" alt="Solar 1">
+        <img src="image files/waaree-solar.jpg" class="slide" alt="Solar 2">
+        <img src="image files/tata-solar.jpg" class="slide" alt="Solar 3">
+        <img src="image files/vikram-solar.jpg" class="slide" alt="Solar 4">
+    </div>
+
+  
+</section>
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+     navLinks.style.right="0";
+    }
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+</script>
+<section class="solarpanel">
+    <div class="solar">
+        <h1>Solar Panels</h1>
+
+    </div>
+</section>
+<section class="solarpanel">
+    <h2>Uses of Solar Panels</h2>
+    <ul class="solar-points">
+        <li><strong>Residential Electricity:</strong> Power homes with solar energy to reduce electricity bills.</li>
+        <li><strong>Commercial & Industrial:</strong> Supply electricity to factories, offices, and malls.</li>
+        <li><strong>Solar Water Heating:</strong> Heating water for homes, swimming pools, or industries.</li>
+        <li><strong>Solar Street Lights:</strong> Power street lamps without connecting to the grid.</li>
+        <li><strong>Remote Areas:</strong> Provide electricity in off-grid areas or villages.</li>
+        <li><strong>Agriculture:</strong> Run irrigation pumps, greenhouses, and farm equipment.</li>
+        <li><strong>Transportation:</strong> Used in solar-powered cars, boats, and planes.</li>
+    </ul>
+
+    <h2>Advantages of Solar Panels</h2>
+    <ul class="solar-points">
+        <li ><strong>Eco-friendly:</strong> Clean energy with no greenhouse gas emissions.</li>
+        <li><strong>Cost-saving:</strong> Reduce electricity bills and sell excess power.</li>
+        <li><strong>Low Maintenance:</strong> Lasts 25+ years with minimal maintenance.</li>
+        <li><strong>Energy Independence:</strong> Less dependency on fossil fuels.</li>
+        <li><strong>Versatile Installation:</strong> Rooftops, ground mounts, and mobile systems.</li>
+        <li><strong>Increases Property Value:</strong> Homes with solar panels have higher value.</li>
+    </ul>
+
+    <h2>Qualities / Features to Look For</h2>
+    <ul class="solar-points">
+        <li><strong>Efficiency:</strong> 15–22% sunlight conversion efficiency.</li>
+        <li><strong>Durability:</strong> Withstands rain, heat, and harsh weather.</li>
+        <li><strong>Warranty:</strong> Usually 20–25 years.</li>
+        <li><strong>Material:</strong> Monocrystalline or Polycrystalline.</li>
+        <li><strong>Temperature Coefficient:</strong> Better performance in high temperatures.</li>
+    </ul>
+</section>
+<section class="solar-companies">
+    <h2>Top Solar Panel Brands We Deal With</h2>
+
+    <div class="company-cards">
+
+        <div class="company-card" onclick="openModal('reliance')">
+    <img src="reliance-solar.jpg" alt="Reliance Solar Panel">
+    <h3>Reliance Solar</h3>
+    <p>High efficiency Indian solar panels</p>
+</div>
+
+
+        <div class="company-card" onclick="openModal('waaree')">
+            <img src="waaree-solar.jpg" alt="Waaree Solar Panel">
+            <h3>Waaree Energies</h3>
+            <p>Reliable & cost-effective panels</p>
+        </div>
+
+        <div class="company-card" onclick="openModal('tata')">
+            <img src="tata-solar.jpg" alt="Tata Solar Panel">
+            <h3>Tata Power Solar</h3>
+            <p>Premium quality & long durability</p>
+        </div>
+
+       <div class="company-card" onclick="openModal('vikram')">
+            <img src="vikram-solar.jpg" alt="Vikram Solar Panel">
+            <h3>Vikram Solar</h3>
+            <p>Global standard solar technology</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <section class="footer">
+        <div class="footer-row">
+
+            <!-- Left: Credentials -->
+            <div class="footer-left">
+                <p class="title">Our Credentials</p>
+
+                <ul class="credentials">
+                    <li><strong>CIN:</strong> U74999MH2018PTC308404</li>
+                    <li><strong>PAN:</strong> ABACS2141Q</li>
+                    <li><strong>TAN:</strong> NGPS17088B</li>
+                    <li><strong>GST:</strong> 27ABACS2141Q1Z3</li>
+                </ul>
+            </div>
+
+            <!-- Center: Follow Us -->
+            <div class="footer-center">
+                <h6>Follow Us</h6>
+                <p class="social">Let us be social</p>
+
+                <div class="social-icons">
+                    <i class="ri-facebook-line"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
+                     <button class="arrow prev" onclick="prevSlide()">❮</button>
+                    <button class="arrow next" onclick="nextSlide()">❯</button>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2025 All Rights Reserved<br>
+            Designed by – Team SHUL
+        </p>
+    </section>
+</footer>
+<script>
+    const slides = document.querySelectorAll('.header-slideshow .slide');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[index].classList.add('active');
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    // auto slide
+    setInterval(nextSlide, 3000);
+</script>
+<script>
+const solarData = {
+    reliance: {
+        title: "Reliance Solar Panels",
+        points: [
+            "High efficiency mono PERC technology",
+            "Made in India – trusted brand",
+            "Long life span (25+ years)",
+            "Excellent performance in high heat",
+            "Strong aluminum frame",
+            "Low degradation rate",
+            "Ideal for residential & commercial use",
+            "Good after-sales support",
+            "Competitive pricing"
+        ]
+    },
+    waaree: {
+        title: "Waaree Solar Panels",
+        points: [
+            "India’s largest solar manufacturer",
+            "Cost-effective solutions",
+            "High power output",
+            "Durable glass protection",
+            "Good low-light performance",
+            "Wide product range",
+            "25-year warranty",
+            "Used in large solar parks",
+            "ISO certified quality"
+        ]
+    },
+    tata: {
+        title: "Tata Power Solar Panels",
+        points: [
+            "Premium quality panels",
+            "Excellent brand trust",
+            "High efficiency cells",
+            "Very low maintenance",
+            "Long-term performance",
+            "Strong customer service",
+            "Suitable for rooftops",
+            "Advanced safety standards",
+            "Weather resistant design"
+        ]
+    },
+    vikram: {
+        title: "Vikram Solar Panels",
+        points: [
+            "Global standard technology",
+            "High module efficiency",
+            "Robust build quality",
+            "Excellent temperature tolerance",
+            "Used in international projects",
+            "Advanced manufacturing",
+            "PID resistant modules",
+            "Strong warranty support",
+            "Ideal for large installations"
+        ]
+    }
+};
+
+function openModal(company) {
+    document.getElementById("modalTitle").innerText = solarData[company].title;
+
+    const list = document.getElementById("modalPoints");
+    list.innerHTML = "";
+
+    solarData[company].points.forEach(point => {
+        const li = document.createElement("li");
+        li.innerText = point;
+        list.appendChild(li);
+    });
+
+    document.getElementById("infoModal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("infoModal").style.display = "none";
+}
+</script>
+
+
+<div id="infoModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+        <h2 id="modalTitle"></h2>
+        <ul id="modalPoints"></ul>
+    </div>
+</div>
+
+</body>
+</html>

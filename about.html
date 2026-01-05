@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>About Us | Shul Ventures</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav>
+    <h1>Shul Ventures</h1>
+
+    <div class="nav-links" id="navLinks">  
+        <i class="ri-close-line" onclick="hideMenu()"></i>
+        <ul>
+             <li><a href="index.html" class="active">HOME</a></li>
+            <li><a href="about.html" class="green">ABOUT</a></li>
+            <li><a href="service.html">SERVICE</a></li>    
+            
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <i class="ri-menu-line" onclick="showMenu()"></i>
+</nav>
+
+<!-- ================= ABOUT HEADER ================= -->
+<section class="panel-header">
+    <div class="text-box1">
+        <h2>Shul Ventures</h2>
+        <p>Powering a greener & sustainable future</p>
+    </div>
+</section>
+
+<!-- ================= ABOUT CONTENT ================= -->
+<section class="container1">
+
+    <h4>Who We Are</h4>
+    <p>
+        Shul Ventures is a solar energy company dedicated to delivering
+        high-quality solar solutions for homes and businesses. We help
+        customers reduce electricity costs while contributing to a
+        cleaner environment.
+    </p>
+
+    <h4>Our Mission</h4>
+    <p>
+        Our mission is to make clean, renewable energy accessible to everyone.
+        We believe solar power is the future, and we are committed to building
+        a sustainable and greener planet.
+    </p>
+
+    <h4>What We Offer</h4>
+    <div class="highlight">
+        <p>✔ High-efficiency solar panels</p>
+        <p>✔ Complete solar system installation</p>
+        <p>✔ Maintenance & technical support</p>
+        <p>✔ Affordable and reliable solutions</p>
+    </div>
+
+    <h4>Why Choose Shul Ventures?</h4>
+    <p>
+        We use durable materials, modern technology, and skilled professionals
+        to ensure long-lasting performance. Customer satisfaction and quality
+        service are at the heart of everything we do.
+    </p>
+
+    <div class="cta1">
+        <a href="contact.html">Get in Touch</a>
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+    <section class="footer">
+        <div class="footer-row">
+
+            <div class="footer-left">
+                <p class="title">Our Credentials</p>
+                <ul class="credentials">
+                    <li><strong>CIN:</strong> U74999MH2018PTC308404</li>
+                    <li><strong>PAN:</strong> ABACS2141Q</li>
+                    <li><strong>TAN:</strong> NGPS17088B</li>
+                    <li><strong>GST:</strong> 27ABACS2141Q1Z3</li>
+                </ul>
+            </div>
+
+            <div class="footer-center">
+                <h6>Follow Us</h6>
+                <p class="social">Let us be social</p>
+                <div class="social-icons">
+                    <i class="ri-facebook-line"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-linkedin-fill"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2025 All Rights Reserved<br>
+            Designed by – Team SHUL
+        </p>
+    </section>
+</footer>
+
+<!-- ================= JS ================= -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){ navLinks.style.right = "0"; }
+    function hideMenu(){ navLinks.style.right = "-200px"; }
+</script>
+
+</body>
+</html>
