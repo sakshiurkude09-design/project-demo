@@ -1377,7 +1377,7 @@ h6 {
 
 /*=======================for Gallary page =================*/
 
-.section2.h2{
+.section2 h2{
      font-family: Arial, Helvetica, sans-serif;
         font-size: 12vw;
         background:white;
@@ -1385,6 +1385,7 @@ h6 {
         color: transparent;
         background-size: cover;
 }
+
 
 
 
