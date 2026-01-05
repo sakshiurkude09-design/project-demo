@@ -274,6 +274,15 @@ nav i{
 .next {
     right: 20px;
 }
+    .prev1 {
+    left: 20px;
+   top: 47%;
+}
+
+.next1 {
+    right: 20px;
+     top: 47%;
+}
 .nav-links ul li::after{
     content: '';
     width: 0%;
@@ -1358,6 +1367,7 @@ h6 {
 .fade-right {
     transform: translateX(40px); /* from right */
 }
+
 
 
 
