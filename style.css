@@ -701,9 +701,9 @@ nav i{
     transition: 0.3s;
 }
 .company-card {
-    width: 300px;
+    width: 280px;
    
-    padding: 10px;
+    padding: 9px;
     border-radius: 30px;
     background-color: white;
 }
@@ -1401,6 +1401,7 @@ nav i{
         color: transparent;
         background-size: cover;
 }
+
 
 
 
