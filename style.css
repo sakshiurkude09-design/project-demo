@@ -823,18 +823,21 @@ nav i{
 
     /* ---------- SLIDESHOW IMAGES ---------- */
     .header-slideshow,
-    .header-slideshow1{
+    .header-slideshow1,
+    .header-slideshow2 img{
 
         background-color: white;
     }
     .header-slideshow img,
-    .header-slideshow1 img{
+    .header-slideshow1 img,
+    .header-slideshow2 img{
         height: 30vh;
         background-color: rgb(255, 255, 255);
         overflow-clip-margin: content-box;
         overflow: clip;
        
     }
+   
 
     /* ---------- TEXT ON HEADER ---------- */
     .text-box1{
@@ -1400,6 +1403,7 @@ nav i{
         color: transparent;
         background-size: cover;
 }
+
 
 
 
