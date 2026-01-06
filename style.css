@@ -479,8 +479,8 @@ nav i{
    3. Footer
    ===================================================== */
 .footer {
-    height: 210px;
-    background-color: #0F2854;
+    height: 250px;
+    background-color: #070f1f;
     color: white;
     padding: 30px;
     font-family: Arial, sans-serif;
@@ -500,11 +500,6 @@ nav i{
     width: 10%;
     text-align: center;
 }
-h6 {
-            font-size: 30px;
-            color: white;
-            margin-top: 30px;
-        }
 
 /* Credentials */
 .footer .title {
@@ -1405,6 +1400,7 @@ h6 {
         color: transparent;
         background-size: cover;
 }
+
 
 
 
