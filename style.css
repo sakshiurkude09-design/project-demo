@@ -527,7 +527,7 @@ nav i{
 /* Icons */
 .social-icons i {
     font-size: 20px;
-    margin: 0 8px;
+    margin: 0 6px;
     cursor: pointer;
 }
 
@@ -1400,6 +1400,7 @@ nav i{
         color: transparent;
         background-size: cover;
 }
+
 
 
 
