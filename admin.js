@@ -7,6 +7,7 @@ form.addEventListener("submit", function (e) {
         title: document.getElementById("title").value,
         description: document.getElementById("description").value,
         images: [
+            document.getElementById("image").value,
             document.getElementById("image1").value,
             document.getElementById("image2").value,
             document.getElementById("image3").value
@@ -21,3 +22,4 @@ form.addEventListener("submit", function (e) {
     alert("Project Added Successfully!");
     form.reset();
 });
+
