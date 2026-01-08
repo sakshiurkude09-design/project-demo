@@ -9,6 +9,106 @@
     rel="stylesheet"
 />
     <link rel="stylesheet" href="style.css">
+     <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #ffffff;
+            font-size: 28px;
+        }
+
+        .gallery {
+           display: flex;
+            gap: 70px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+            transition: transform 0.3s, box-shadow 0.3s;
+            flex-wrap: wrap;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+             border-radius: 12px;
+        }
+
+        .card-body {
+            padding: 10px;
+        }
+
+        .card-body h3 {
+            font-size: 20px;
+            color: #0b464b;
+            margin-bottom: 10px;
+        }
+
+        .card-body p {
+            font-size: 14px;
+            color: #555;
+            margin-bottom: 12px;
+        }
+
+       @media (max-width: 768px) {
+
+    .gallery {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 200px;
+        
+    }
+
+    .card img {
+        height: 120px;
+    }
+
+    .card-body h3 {
+        font-size: 18px;
+    }
+}
+
+/* ===== SMALL MOBILE ===== */
+@media (max-width: 480px) {
+
+    .gallery {
+        gap: 16px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .card img {
+        height: 120px;
+    }
+}
+    </style>
+  
     
 </head>
 <body>
@@ -35,9 +135,9 @@
     <!-- Slideshow images -->
      <div class="header-slideshow1">
         <img src="solar3.jpg" class="slide active" alt="Solar 1">
-        <img src="waaree-battaries.jpg" class="slide" alt="Solar 2">
-        <img src="solar2.jpg" class="slide" alt="Solar 3">
-        <img src="solara.jpg" class="slide" alt="Solar 4">
+        <img src="image files/waaree-battaries.jpg" class="slide" alt="Solar 2">
+        <img src="image files/tata-battries.jpg" class="slide" alt="Solar 3">
+        <img src="image files/vikram-invertor.jpg" class="slide" alt="Solar 4">
 
           <button class="arrow prev" onclick="prevSlide()">❮</button>
     <button class="arrow next" onclick="nextSlide()">❯</button>
@@ -45,27 +145,22 @@
 
   
 </section>
-<section class="header">
-
-
-
-</section>
-<script>
-    var navLinks = document.getElementById("navLinks");
-
-    function showMenu(){
-     navLinks.style.right="0";
-    }
-    function hideMenu(){
-        navLinks.style.right ="-200px";
-    }
-</script>
 
 <section class="section2 animate fade-up">
     <h2>Our Solar Projects</h2>
+    <div class="gallery" id="gallery"></div>
+    
 </section>
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeProjectModal()">×</span>
 
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
 
+    <div id="modalImages" class="modal-images"></div>
+  </div>
+</div>
 <footer>
     <section class="footer">
         <div class="footer-row">
@@ -102,47 +197,13 @@
         </p>
     </section>
 </footer>
-<script>
-    const slides = document.querySelectorAll('.header-slideshow1 .slide');
-    let currentIndex = 0;
 
-    function showSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        slides[index].classList.add('active');
-    }
 
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-    }
 
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        showSlide(currentIndex);
-    }
 
-    // auto slide
-    setInterval(nextSlide, 3000);
-</script>
-<script>
-const animatedElements = document.querySelectorAll(".animate");
-
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("show");
-            observer.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.2 });
-
-animatedElements.forEach(el => observer.observe(el));
-</script>
+<script src="main.js"></script>
 
 
 
 </body>
 </html>
-
-
-
