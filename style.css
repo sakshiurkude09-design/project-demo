@@ -538,7 +538,7 @@ nav i{
 /* Icons */
 .social-icons i {
     font-size: 20px;
-    margin: 0 6px;
+    margin: 0 8px;
     cursor: pointer;
 }
 
@@ -550,53 +550,384 @@ nav i{
 .footer .copyright {
     font-size: 12px;
     color: #ccc;
-    text-align: start;
+   
     margin-top: 20px;
 }
-@media (max-width: 600px) {
-    .footer {
-    height: 355px;
+/* Footer main container */
+footer {
+    background-color: #070f1f;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer section */
+.footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer row (columns) */
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Each column */
+.footer-col,
+.footer-col1 {
+    flex: 1 1 220px;
+}
+
+/* Headings */
+.footer-col h4,
+.footer-col1 h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: left;
+}
+
+/* Small underline under heading */
+.footer-col h4::after,
+.footer-col1 h4::after {
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+/* Paragraph */
+.footer-col p,
+.footer-col1 p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Links */
+.footer-col ul,
+.footer-col1 ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-col ul li,
+.footer-col1 ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a,
+.footer-col a,
+.footer-col1 ul li a,
+.footer-col1 a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.ri-facebook-line,
+.ri-twitter-fill,
+.ri-linkedin-fill{
+    font-size: 20px;
+}
+
+.footer-col ul li a:hover,
+.footer-col a:hover,
+.footer-col1 ul li a:hover,
+.footer-col1 a:hover {
+    color: #ff9800;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    margin-right: 10%;
+}
+
+/* Responsive */
+
+
+.footer {
+    height: 250px;
     background-color: #070f1f;
     color: white;
     padding: 30px;
     font-family: Arial, sans-serif;
 }
+
+.footer-row {
+    display: flex;
+    align-items: flex-start; /* upar se start */
+}
+
+
+.footer-left {
+    width: 40%;
+}
+
+.footer-center {
+    width: 10%;
+    text-align: center;
+}
+
+/* Credentials */
+.footer .title {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.credentials {
+    list-style: none;
+    padding: 0;
+}
+
+/* Follow us */
+.footer-center h6 {
+  
+    font-size: 20px;
+}
+
+.footer .social {
+    font-size: 16px;
+    font-weight: 100;
+   
+}
+
+/* Icons */
+.social-icons i {
+    font-size: 20px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.social-icons i:hover {
+    color: #1da1f2;
+}
+
+/* Copyright */
+.footer .copyright {
+    font-size: 12px;
+    color: #ccc;
+   
+    margin-top: 20px;
+}
+/* Footer main container */
+footer {
+    background-color: #070f1f;
+    color: #fff;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Footer section */
+.footer {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer row (columns) */
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Each column */
+.footer-col,
+.footer-col1 {
+    flex: 1 1 220px;
+}
+
+/* Headings */
+.footer-col h4,
+.footer-col1 h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+    text-align: left;
+}
+
+/* Small underline under heading */
+.footer-col h4::after,
+.footer-col1 h4::after {
+    content: "";
+    width: 90px;
+    height: 2px;
+    background: rgb(255, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+/* Paragraph */
+.footer-col p,
+.footer-col1 p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+/* Links */
+.footer-col ul,
+.footer-col1 ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-col ul li,
+.footer-col1 ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a,
+.footer-col a,
+.footer-col1 ul li a,
+.footer-col1 a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.ri-facebook-line,
+.ri-twitter-fill,
+.ri-linkedin-fill{
+    font-size: 20px;
+}
+
+.footer-col ul li a:hover,
+.footer-col a:hover,
+.footer-col1 ul li a:hover,
+.footer-col1 a:hover {
+    color: #ff9800;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+    border-top: 1px solid #333;
+    padding-top: 15px;
+    margin-right: 10%;
+}
+
+/* Responsive */
+
+
+
+/* ===================== TABLET ===================== */
+@media (max-width: 992px) {
+
+    .footer {
+        height: auto;
+        padding: 0px 20px;
+    }
+
+    .footer-row {
+        gap: 4px;
+        justify-content: center;
+    }
+
+    .footer-col {
+        flex: 1 1 45%;
+    }
+    
+    .footer-col h4::after {
+        width: 60px;
+    }
+
+    .copyright {
+        margin-right: 0;
+        font-size: 13px;
+    }
+}
+
+/* ===================== MOBILE ===================== */
+@media (max-width: 600px) {
+
+    footer {
+        padding: 10px 15px;
+    }
+
     .footer-row {
         display: flex;
-        flex-direction: column; 
-        align-items: start;    
+        flex-wrap: wrap;
+        gap: 3px;
     }
 
-    .footer-left,
-    .footer-center {
-        width: 100%;   
-        text-align: start;    
-        margin-bottom: 20px;    
+    /* About & Contact SAME jagah (full width) */
+    .footer-col1 {
+        flex: 0 0 100%;
+        text-align: center;
     }
 
-    .footer-center {
-        order: 2; 
-    }
-   
 
-    .footer-left {
-        order: 1;
+    .footer-col1 h4 {
+        text-align: center;
     }
 
-    .footer .copyright {
-        order: 3; /* Copyright last */
+    .footer-col1 h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70px;
+    }
+
+    .social-icons {
         margin-top: 10px;
     }
 
     .social-icons i {
-        font-size: 18px;
-        margin: 0 6px;
+        font-size: 22px;
     }
-    .footer .title {
-    font-size: 30px;
-    margin-bottom: 15px;
+
+    .copyright {
+        font-size: 12px;
+        margin-top: 20px;
+        padding-top: 10px;
+    }
 }
+    @media (max-width: 600px) {
+
+    .footer-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2px;
+    }
+
+    /* ALL footer columns side by side (2 in a row) */
+    .footer-col {
+        flex: 0 0 48%;
+        text-align: center;
+    }
+
+    .footer-col h4 {
+        text-align: center;
+    }
+
+    .footer-col h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        margin-top: 20px;
+    }
 }
+
 /* =====================================================
    4. SOLAR PANELS
    ===================================================== */
@@ -3019,6 +3350,7 @@ nav i{
         color: transparent;
         background-size: cover;
 }
+
 
 
 
