@@ -746,6 +746,7 @@ footer {
     margin-bottom: 15px;
     position: relative;
     text-align: left;
+    color: #ff9800;
 }
 
 /* Small underline under heading */
@@ -865,6 +866,7 @@ footer {
 
     .footer-col1 h4 {
         text-align: center;
+        color: #ff9800;
     }
 
     .footer-col1 h4::after {
@@ -1943,6 +1945,7 @@ img {
 }
     
 }
+
 
 
 
